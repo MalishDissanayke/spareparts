@@ -1,0 +1,5 @@
+[mail function]
+; For Win32 only.
+; https://php.net/smtp
+SMTP = smtp.gmail.com
+smtp_port = 587
