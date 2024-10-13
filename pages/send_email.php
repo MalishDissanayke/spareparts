@@ -17,13 +17,13 @@ $mail->SMTPDebug = SMTP::DEBUG_OFF; // Set to SMTP::DEBUG_SERVER for debugging
 $mail->isSMTP();
 $mail->Host = 'smtp.gmail.com';
 $mail->SMTPAuth = true;
-$mail->Username = 'malishadr946@gmail.com';
-$mail->Password = 'fumb ruqk ygvv xyzb'; // Use app-specific password if 2FA is enabled
+$mail->Username = 'your_email';
+$mail->Password = 'your_password'; // Use app-specific password if 2FA is enabled
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption
 $mail->Port = 587; // TCP port to connect to
 
 // Sender's email address
-$sender_email = 'malishadr946@gmail.com';
+$sender_email = 'your_email';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['emails'], $_POST['message'], $_POST['subject'])) {
     // Sanitize inputs
